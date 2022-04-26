@@ -1,0 +1,15 @@
+# EC2 instance
+
+**On-Demand Instance** - An On-Demand Instance is an instance that you use on-demand. You have full control over its lifecycle — you decide when to launch, stop, hibernate, start, reboot, or terminate it. There is no long-term commitment required when you purchase On-Demand Instances. There is no upfront payment and you pay only for the seconds that your On-Demand Instances are running. The price per second for running an On-Demand Instance is fixed. **On-demand instances cannot be interrupted.** However, On-demand instances are **not as cost-effective** as Reserved instances.
+
+**Amazon EC2 Spot Instances** let you take advantage of unused EC2 capacity in the AWS cloud. Spot Instances are available at up to a **90% discount compared to On-Demand prices**. You can use Spot Instances for various stateless, **fault-tolerant**, or flexible applications such as big data, containerized workloads, CI/CD, web servers, high-performance computing (HPC), and other test & development workloads. These **can be terminated at short notice**, so these are not suitable for critical workloads that need to run at a specific point in time.
+
+**Reserved Instance** - Reserved Instances provide you with significant savings (**up to 75%) on your Amazon EC2 costs compared to On-Demand Instance** pricing. Reserved Instances are not physical instances, but rather a billing discount applied to the use of On-Demand Instances in your account. You can purchase a Reserved Instance for a one-year or three-year commitment, with the three-year commitment offering a bigger discount. **Reserved instances cannot be interrupted**. So this is the correct option.
+
+**Dedicated Host** - Amazon EC2 Dedicated Hosts allow you to use your eligible **software licenses from vendors such as Microsoft and Oracle** on Amazon EC2 so that you get the flexibility and cost-effectiveness of using your licenses, but with the resiliency, simplicity, and elasticity of AWS. **An Amazon EC2 Dedicated Host is a physical server fully dedicated for your use**, so you can help address corporate compliance requirement. They're **not cost-efficient** compared to On-Demand instances.
+
+**AWS Systems Manager Session Manager**
+AWS SSM Session Manager is a fully-managed service that provides you with an **interactive browser-based shell and CLI experience**. It helps provide secure and auditable instance management without the need to open inbound ports, maintain bastion hosts, and manage SSH keys. Session Manager helps to enable compliance with corporate policies that require controlled access to instances, increase security and auditability of access to the instances while providing simplicity and cross-platform instance access to end-users.
+
+
+**You must use an AMI from the same region as that of the EC2 instance. The region of the AMI has no bearing on the performance of the EC2 instance**
