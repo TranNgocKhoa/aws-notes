@@ -6,3 +6,8 @@ Access keys are long-term credentials for an IAM user or the AWS account root us
 **IAM Group** - An IAM group is a collection of IAM users. Groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users.
 
 **AWS Policy** - You manage access in AWS by creating policies and attaching them to IAM identities (users, groups of users, or roles) or AWS resources. A policy is an object in AWS that, when associated with an identity or resource, defines their permissions.
+
+**IAM access advisor**
+Access advisor shows the service permissions granted to a user and when those services were last accessed. **You can use this information to revise your policies**. To summarize, you can identify unnecessary permissions so that you can revise your IAM policies accordingly.
+
+**IAM credentials report** - You can generate and download a credential report that lists all users in your account and the status of their various credentials, including passwords, access keys, and MFA devices. It is not used to review permissions granted to a user.

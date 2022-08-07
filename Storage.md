@@ -6,6 +6,7 @@
 Amazon EFS supports two forms of encryption for file systems, encryption of data in transit and encryption at rest. This is an optional feature and has to be enabled by user if needed.
 
 **Elastic Block Storage (EBS)** - Amazon Elastic Block Store (EBS) is an easy to use, high-performance block storage service designed for use with Amazon Elastic Compute Cloud (EC2) instances for both throughput and transaction-intensive workloads at any scale. Encryption (at rest and during transit) is an optional feature for EBS and has to be enabled by the user.
+When using EBS Volumes, the **volume and the instance must be in the same Availability Zone.**
 
 **Amazon S3** - Amazon Simple Storage Service is storage for the Internet. To upload data into S3 you need to create an S3 bucket in one of the AWS Regions. Amazon S3 default encryption provides a way to set the default encryption behavior for an S3 bucket. 
 
@@ -18,6 +19,8 @@ Encryption for an S3 bucket is an additional feature and the user needs to enabl
 		**Amazon S3 Glacier (S3 Glacier)** - Amazon S3 Glacier is a secure, durable, and extremely low-cost Amazon S3 cloud storage class for data archiving and long-term backup. It is designed to deliver 99.999999999% durability, and provide comprehensive security and compliance capabilities that can help meet even the most stringent regulatory requirements. S3 Glacier does not support rapid data retrieval, so this option is ruled out.
 		
 **Amazon S3 Glacier (S3 Glacier)**, is a storage service optimized for infrequently used data, or "cold data. Data at rest stored in **S3 Glacier is automatically server-side encrypted** using 256-bit Advanced Encryption Standard (AES-256) with keys maintained by AWS.
+
+**Transfer acceleration** - Transfer acceleration is a feature of Amazon S3. Amazon S3 Transfer Acceleration can speed up content transfers to and from Amazon S3 by as much as 50-500% for long-distance transfer of larger objects.
 
 **Storage Gateway** - AWS Storage Gateway is a hybrid cloud storage service that connects your existing on-premises environments with the AWS Cloud. Customers use Storage Gateway to simplify storage management and reduce costs for key hybrid cloud storage use cases.
 
@@ -37,3 +40,8 @@ Amazon Elastic Block Store (EBS) is an easy to use, high-performance block stora
 
 Designed for mission-critical systems, EBS volumes are replicated within an Availability Zone (AZ) and can easily scale to petabytes of data. You can attach an available EBS volume to one instance that is in the same Availability Zone as the volume.
 
+**AWS Snowmobile**
+
+AWS Snowmobile is an **Exabyte-scale data transfer** service used to move extremely large amounts of data to AWS. **You can transfer up to 100PB per Snowmobile**, a 45-foot long ruggedized shipping container, pulled by a semi-trailer truck. Snowmobile makes it easy to move massive volumes of data to the cloud, including video libraries, image repositories, or even a complete data center migration. Transferring data with Snowmobile is more secure, fast and cost-effective.
+
+**AWS Snowball** - AWS Snowball is a **petabyte-scale data transport** solution that uses secure appliances to transfer large amounts of data into and out of AWS. The use of Snowball addresses common challenges with large- scale data transfers including high network costs, long transfer times, and security concerns. Transferring data with Snowball is simple, fast, secure, and can be as little as one-fifth the cost of high-speed Internet. However, one Snowball **only provides up to 80 TB of capacity**. Therefore, to transfer 50 PBs, AWS Snowball is not the most cost-effective option.
